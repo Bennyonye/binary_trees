@@ -1,20 +1,20 @@
-# C - Exploring Binary Trees
+# C - Binary trees
 
-This collaborative project delves into the intricacies, benefits, and drawbacks of employing trees as fundamental data structures. We gain insights into classifying trees and mastering traversal techniques. Throughout our journey, we implement various types of binary trees, including binary, binary search, AVL, and Max Binary Heap trees.
+This was a group project in which we learned about the details, advantages, and disadvantages of using trees as data structures. We learned about how to qualify trees as well as how to traverse them. Throughout the project, we implemented binary, binary search, AVL, and Max Binary Heap trees.
 
-## Testing :heavy_check_mark:
+## Tests
 
-* [tests](./tests): Directory containing test files for all tasks, generously provided by ALX.
+* [tests](./tests): Folder of test files for all tasks. Provided by ALX.
 
-## Helper Functions :raised_hands:
+## Helper File
 
-* [binary_tree_print.c](./binary_tree_print.c): This C function elegantly prints binary trees in a visually appealing manner.
+* [binary_tree_print.c](./binary_tree_print.c): C function that prints binary trees in a pretty way.
 
-## Header File :file_folder:
+## Header File
 
-* [binary_trees.h](./binary_trees.h): This header file encompasses all necessary definitions and prototypes for the project's types and functions.
+* [binary_trees.h](./binary_trees.h): Header file containing definitions and prototypes for all types and functions written for the project.
 
-Data Structures Overview
+Data Structures
 ```
 struct binary_tree_s
 {
@@ -30,7 +30,7 @@ typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
 ```
 
-Function Prototypes Summary
+Function Prototypes
 
 | File                             | Prototype                                                                                        |
 | -------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -64,194 +64,155 @@ Function Prototypes Summary
 | `112-array_to_bst.c`             | `bst_t *array_to_bst(int *array, size_t size);`                                                  |
 | `113-bst_search.c`               | `bst_t *bst_search(const bst_t *tree, int value);`                                               |
 | `114-bst_remove.c`               | `bst_t *bst_remove(bst_t *root, int value);`                                                     |
-| `120-binary_tree_is_avl.c`       | `int binary_tree_is_avl(const binary_tree_t *tree);`                                             |
+| `120-binary_tree_is_avl.c`       | `int binary
+
+_tree_is_avl(const binary_tree_t *tree);`                                             |
 | `121-avl_insert.c`               | `avl_t *avl_insert(avl_t **tree, int value);`                                                    |
-| `122-array_to_avl.c`             | `avl_t *array_to_av
+| `122-array_to_avl.c`             | `avl_t *array_to_avl(int *array, size_t size);`                                                  |
 
-l(int *array, size_t size);`                                                  |
+## Tasks
 
-## Task List :page_with_curl:
+* **0. New node**
+  * [0-binary_tree_node.c](./0-binary_tree_node.c): C function that creates a binary tree node with a given parent and value.
+  * Returns a pointer to the new node, or `NULL` on failure.
 
-* **0. New Node**
-  * [0-binary_tree_node.c](./0-binary_tree_node.c): This C function creates a
-  new binary tree node with a given parent and value.
-  * It returns a pointer to the new node, or `NULL` on failure.
+* **1. Insert left**
+  * [1-binary_tree_insert](./1-binary_tree_insert): C function that inserts a node as the left-child of another.
+  * Returns a pointer to the new node, or `NULL` on failure.
+  * If the given `parent` already contains a left node, the new node takes its place and the old left-child becomes the left-child of the new node.
 
-* **1. Insert Left**
-  * [1-binary_tree_insert](./1-binary_tree_insert): This C function inserts a
-  node as the left child of another.
-  * It returns a pointer to the new node, or `NULL` on failure.
-  * If the given `parent` already contains a left node, the new node takes its
-  place and the old left child becomes the left child of the new node.
-
-* **2. Insert Right**
-  * [2-binary_tree_insert_right.c](./2-binary_tree_insert_right.c): This C function
-  inserts a node as the right child of another.
-  * It returns a pointer to the new node, or `NULL` on failure.
-  * If the given `parent` already contains a right node, the new node takes its
-  place and the old right child becomes the right child of the new node.
+* **2. Insert right**
+  * [2-binary_tree_insert_right.c](./2-binary_tree_insert_right.c): C function that inserts a node as the right-child of another.
+  * Returns a pointer to the new node, or `NULL` on failure.
+  * If the given `parent` already contains a right node, the new node takes its place and the old right-child becomes the right-child of the new node.
 
 * **3. Delete**
-  * [3-binary_tree_delete.c](./3-binary_tree_delete.c): This C function deletes
-  an entire binary tree.
+  * [3-binary_tree_delete.c](./3-binary_tree_delete.c): C function that deletes an entire binary tree.
 
-* **4. Is Leaf**
-  * [4-binary_tree_is_leaf.c](./4-binary_tree_is_leaf.c): This C function checks
-  if a given node is a leaf.
-  * It returns `1` if the node is a leaf, `0` otherwise.
+* **4. Is leaf**
+  * [4-binary_tree_is_leaf.c](./4-binary_tree_is_leaf.c): C function that checks if a given node is a leaf.
+  * Returns `1` if the node is a leaf, `0` otherwise.
 
-* **5. Is Root**
-  * [5-binary_tree_is_root.c](./5-binary_tree_is_root.c): This C function checks
-  if a given node is a root.
-  * It returns `1` if the node is a root, `0` otherwise.
+* **5. Is root**
+  * [5-binary_tree_is_root.c](./5-binary_tree_is_root.c): C function that checks if a given node is a root.
+  * Returns `1` if the node is a root, `0` otherwise.
 
-* **6. Pre-order Traversal**
-  * [6-binary_tree_preorder.c](./6-binary_tree_preorder.c): This C function
-  traverses a tree using pre-order traversal.
+* **6. Pre-order traversal**
+  * [6-binary_tree_preorder.c](./6-binary_tree_preorder.c): C function that traverses a tree using pre-order traversal.
 
-* **7. In-order Traversal**
-  * [7-binary_tree_inorder.c](./7-binary_tree_inorder.c): This C function
-  traverses a tree using in-order traversal.
+* **7. In-order traversal**
+  * [7-binary_tree_inorder.c](./7-binary_tree_inorder.c): C function that traverses a tree using in-order traversal.
 
-* **8. Post-order Traversal**
-  * [8-binary_tree_postorder.c](./8-binary_tree_postorder.c): This C function
-  traverses a tree using post-order traversal.
+* **8. Post-order traversal**
+  * [8-binary_tree_postorder.c](./8-binary_tree_postorder.c): C function that traverses a tree using post-order traversal.
 
 * **9. Height**
-  * [9-binary_tree_height.c](./9-binary_tree_height.c): This C function returns
-  the height of a binary tree.
+  * [9-binary_tree_height.c](./9-binary_tree_height.c): C function that returns the height of a binary tree.
 
 * **10. Depth**
-  * [10-binary_tree_depth.c](./10-binary_tree_depth.c): This C function returns
-  the depth of a given node in a binary tree.
+  * [10-binary_tree_depth.c](./10-binary_tree_depth.c): C function that returns the depth of a given node in a binary tree.
 
 * **11. Size**
-  * [11-binary_tree_size.c](./11-binary_tree_size.c): This C function returns
-  the size of a binary tree.
+  * [11-binary_tree_size.c](./11-binary_tree_size.c): C function that returns the size of a binary tree.
 
 * **12. Leaves**
-  * [12-binary_tree_leaves.c](./12-binary_tree_leaves.c): This C function returns
-  the number of leaves in a binary tree.
+  * [12-binary_tree_leaves.c](./12-binary_tree_leaves.c): C function that returns the number of leaves in a binary tree.
 
 * **13. Nodes**
-  * [13-binary_tree_nodes.c](./13-binary_tree_nodes.c): This C function returns
-  the number of nodes in a binary tree with at least one child.
+  * [13-binary_tree_nodes.c](./13-binary_tree_nodes.c): C function that returns the number of nodes in a binary tree with at least one child.
 
-* **14. Balance Factor**
-  * [14-binary_tree_balance.c](./14-binary_tree_balance.c): This C function
-  returns the balance factor of a binary tree.
+* **14. Balance factor**
+  * [14-binary_tree_balance.c](./14-binary_tree_balance.c): C function that returns the balance factor of a binary tree.
 
-* **15. Is Full**
-  * [15-binary_tree_is_full.c](./15-binary_tree_is_full.c): This C function
-  checks if a binary tree is full.
-  * It returns `1` if a tree is full, `0` otherwise.
+* **15. Is full**
+  * [15-binary_tree_is_full.c](./15-binary_tree_is_full.c): C function that checks if a binary tree is full.
+  * Returns `1` if a tree is full, `0` otherwise.
 
-* **16. Is Perfect**
-  * [16-binary_tree_is_perfect.c](./16-binary_tree_is_perfect.c): This C function
-  checks if a binary tree is perfect.
-  * It returns `1` if a tree is perfect, `0` otherwise.
+* **16. Is perfect**
+  * [16-binary_tree_is_perfect.c](./16-binary_tree_is_perfect.c): C function that checks if a binary tree is perfect.
+  * Returns `1` if a tree is perfect, `0` otherwise.
 
 * **17. Sibling**
-  * [17-binary_tree_sibling.c](./17-binary_tree_sibling.c): This C function
-  returns a pointer to the sibling of a given node in a binary tree.
-  * It returns `NULL` if no sibling is found.
+  * [17-binary_tree_sibling.c](./17-binary_tree_sibling.c): C function that returns a pointer to the sibling of a given node in a binary tree.
+  * Returns `NULL` if no sibling is found.
 
 * **18. Uncle**
-  * [18-binary_tree_uncle.c](./18-binary_tree_uncle.c): This C function
-  returns a pointer to the uncle of a given node in a binary tree.
-  * It returns `NULL` if no uncle is found.
+  * [18-binary_tree_uncle.c](./18-binary_tree_uncle.c): C function that returns a pointer to the uncle of a given node in a binary tree.
+  * Returns `NULL` if no uncle is found.
 
-* **19. Lowest Common Ancestor**
-  * [100-binary_trees_ancestor.c](./100-binary_trees_ancestor.c): This C function
-  returns a pointer to the lowest common ancestor node of two given nodes
-  in a binary tree.
-  * It returns `NULL` if no common ancestor is found.
+* **19. Lowest common ancestor**
+  * [100-binary_trees_ancestor.c](./100-binary_trees_ancestor.c): C function that returns a pointer to the lowest common ancestor node of two given nodes in a binary tree.
+  * Returns `NULL` if no common ancestor is found.
 
-* **20. Level-order Traversal**
-  * [101-binary_tree_levelorder.c](./101-binary_tree_levelorder.c): This C function
-  traverses a binary tree using level-order traversal.
+* **20. Level-order traversal**
+  * [101-binary_tree_levelorder.c](./101-binary_tree_levelorder.c): C function that traverses a binary tree using level-order traversal.
 
-* **21. Is Complete**
-  * [102-binary_tree_is_complete.c](./102-binary_tree_is_complete.c): This C function
-  checks if a binary tree is complete.
-  * It returns `1` if the tree is complete, `0` otherwise.
+* **21. Is complete**
+  * [102-binary_tree_is_complete.c](./102-binary_tree_is_complete.c): C function that checks if a binary tree is complete.
+  * Returns `1` if the tree is complete, `0` otherwise.
 
-* **22. Rotate Left**
-  * [103-binary_tree_rotate_left.c](./103-binary_tree_rotate_left.c): This C function
-  performs a left-rotation on a binary tree.
-  * It returns a pointer to the new root node of the tree after rotation.
+* **22. Rotate left**
+  * [103-binary_tree_rotate_left.c](./103-binary_tree_rotate_left.c): C function that performs a left-rotation on a binary tree.
+  * Returns a pointer to the new root node of the tree after rotation.
 
-* **23. Rotate Right**
-  * [104-binary_tree_rotate_right.c](./104-binary_tree_rotate_right.c): This C function
-  performs a right-rotation on a binary tree.
-  * It returns a pointer to the new root node of the tree after rotation.
+* **23. Rotate right**
+  * [104-binary_tree_rotate_right.c](./104-binary_tree_rotate_right.c): C function that performs a right-rotation on a binary tree.
+  * Returns a pointer to the new root node of the tree after rotation.
 
 * **24. Is BST**
-  * [110-binary_tree_is_bst.c](./110-binary_tree_is_bst.c): This C function
-  checks if a binary tree is a valid binary search tree.
-  * It returns `1` if the tree is a valid BST, `0` otherwise.
+  * [110-binary_tree_is_bst.c](./110-binary_tree_is_bst.c): C function that checks if a binary tree is a valid binary search tree.
+  * Returns `1` if the tree is a valid BST, `0` otherwise.
 
 * **25. BST - Insert**
-  * [111-bst_insert.c](./111-bst_insert.c): This C function inserts a value into
-  a binary search tree.
-  * It returns a pointer to the new node, or `NULL` on failure.
+  * [111-bst_insert.c](./111-bst_insert.c): C function that inserts a value into a binary search tree.
+  * Returns a pointer to the new node, or `NULL` on failure.
   * If the tree is `NULL`, the value becomes the root node.
   * The value is ignored if it is already present in the tree.
 
 * **26. BST - Array to BST**
-  * [112-array_to_bst.c](./112-array_to_bst.c): This C function builds a binary
-  search tree from an array.
-  * It returns a pointer to the root node of the created tree, or `NULL` on failure.
+  * [112-array_to_bst.c](./112-array_to_bst.c): C function that builds a binary search tree from an array.
+  * Returns a pointer to the root node of the created tree, or `NULL` on failure.
 
 * **27. BST - Search**
-  * [113-bst_search.c](./113-bst_search.c): This C function searches for a value
-  in a binary search tree.
-  * If the value is found in the BST, it returns a
-
- pointer to the matched node.
-  * Otherwise, it returns `NULL`.
+  * [113-bst_search.c](./113-bst_search.c): C function that searches for a value in a binary search tree.
+  * If the value is matched in the BST, returns a pointer to the matched node.
+  * Otherwise, returns `NULL`.
 
 * **28. BST - Remove**
-  * [114-bst_remove.c](./114-bst_remove.c): This C function removes a node from
-  a binary search tree.
-  * It returns a pointer to the new root node of the tree after deletion.
-  * If the node to be deleted has two children, it is replaced with its first
-  in-order successor.
+  * [114-bst_remove.c](
+
+./114-bst_remove.c): C function that removes a node from a binary search tree.
+  * Returns a pointer to the new root node of the tree after deletion.
+  * If the node to be deleted has two children, it is replaced with its first in-order successor.
 
 * **29. Big O #BST**
-  * [115-O](./115-O): This text file contains the average time complexities of
-  binary search tree operations (one answer per line):
+  * [115-O](./115-O): Text file containing the average time complexities of binary search tree operations (one answer per line):
     * Inserting the value `n`.
     * Removing the node with the value `n`.
     * Searching for a node in a BST of size `n`.
 
 * **30. Is AVL**
-  * [120-binary_tree_is_avl.c](./120-binary_tree_is_avl.c): This C function checks if
-  a binary tree is a valid AVL tree.
-  * If the tree is a valid AVL tree, it returns `1`.
-  * Otherwise, it returns `0`.
+  * [120-binary_tree_is_avl.c](./120-binary_tree_is_avl.c): C function that checks if a binary tree is a valid AVL tree.
+  * If the tree is a valid AVL tree, returns `1`.
+  * Otherwise, returns `0`.
 
 * **31. AVL - Insert**
-  * [121-avl_insert.c](./121-avl_insert.c): This C function inserts a value into
-  an AVL tree.
-  * It returns a value to the inserted node, or `NULL` on failure.
+  * [121-avl_insert.c](./121-avl_insert.c): C function that inserts a value in an AVL tree.
+  * Returns a value to the inserted node, or `NULL` on failure.
 
 * **32. AVL - Array to AVL**
-  * [122-array_to_avl.c](./122-array_to_avl.c): This C function builds an AVL tree
-  from an array.
-  * It returns a pointer to the root node of the created AVL tree, or `NULL` on failure.
-  * Duplicate values are ignored.
+  * [122-array_to_avl.c](./122-array_to_avl.c): C function that builds an AVL tree from an array.
+  * Returns a pointer to the root node of the created AVL tree, or `NULL` on failure.
+  * Ignores duplicate values.
 
 * **35. Big O #AVL Tree**
-  * [125-O](./125-O): This text file contains the average time complexities of AVL tree
-  operations (one answer per line):
+  * [125-O](./125-O): Text file containing the average time complexities of AVL tree operations (one answer per line):
     * Inserting the value `n`.
     * Removing the node with the value `n`.
     * Searching for a node in an AVL tree of size `n`.
 
 * **41. Big O #Binary Heap**
-  * [135-O](./135-O): This text file contains the average time complexities of
-  binary heap operations (one answer per line):
+  * [135-O](./135-O): Text file containing the average time complexities of binary heap operations (one answer per line):
     * Inserting the value `n`.
     * Extracting the root node.
     * Searching for a node in a binary heap of size `n`.
