@@ -219,18 +219,9 @@ _tree_is_avl(const binary_tree_t *tree);`                                       
 
 ## Authors
 <details>
-    <summary>Suara Ayomide</summary>
-    <ul>
-    <li><a href="https://www.github.com/aysuarex">Github</a></li>
-    <li><a href="https://www.twitter.com/Aysuarex">Twitter</a></li>
-    <li><a href="mailto:aysuarex@gmail.com">e-mail</a></li>
+    <summary>Igbukolu Benedict</summary>
     </ul>
 </details>
 <details>
-    <summary>Jozinna Chioma</summary>
-    <ul>
-    <li><a href="https://www.github.com/chioma2000">Github</a></li>
-    <li><a href="https://www.twitter.com/jozinnachioma">Twitter</a></li>
-    <li><a href="mailto:chichipeace2000@yahoo.ca">e-mail</a></li>
-    </ul>
+    <summary>Izevbije Daniel</summary>
 </details>
